@@ -7,4 +7,9 @@ class Test_Pig_Latin < MiniTest::Test
     assert_equal expected, PigLatin.translate("human")
   end
 
+  def test_02_transformation
+    expected = "ansformationtray"
+    assert_equal expected, PigLatin.translate("transformation")
+  end  
+
 end  
