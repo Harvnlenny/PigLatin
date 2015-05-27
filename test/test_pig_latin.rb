@@ -30,6 +30,11 @@ class Test_Pig_Latin < MiniTest::Test
   def test_06_15_Dangerous_Facts_Electricians_Keep_To_Themselves
     expected = "15 Angerousday Actsfay Electriciansyay Eepkay Otay Emselvesthay"
     assert_equal expected, PigLatin.capital_translate("15 Dangerous Facts Electricians Keep To Themselves")
-  end           
+  end
+
+  def test_07_The_unpopular_glory_renames_an_ice!
+    expected = "Ethay unpopularyay oryglay enamesray anyay iceyay!"
+    assert_equal expected, PigLatin.capital_first_word_only_translate("The unpopular glory renames an ice!")
+  end             
 
 end  
