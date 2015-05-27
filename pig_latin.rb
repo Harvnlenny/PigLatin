@@ -15,4 +15,13 @@ class PigLatin
     items.map! {|item| PigLatin.one_word_translate(item)}
     done = items.join(" ")
   end
+
+  def self.capital_translate(word)
+    items = word.split
+    items.map! {|item| PigLatin.one_word_translate(item)}
+    done = items.join(" ").downcase
+    final = done.split.each{|i| i.capitalize!}.join(' ')
+
+  end
+
 end
