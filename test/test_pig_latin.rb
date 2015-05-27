@@ -25,6 +25,11 @@ class Test_Pig_Latin < MiniTest::Test
   def test_05_The_Resemblance_Mutters
     expected = "Ethay Esemblanceray Uttersmay"
     assert_equal expected, PigLatin.capital_translate("The Resemblance Mutters")
-  end        
+  end 
+
+  def test_06_15_Dangerous_Facts_Electricians_Keep_To_Themselves
+    expected = "15 Angerousday Actsfay Electriciansyay Eepkay Otay Emselvesthay"
+    assert_equal expected, PigLatin.capital_translate("15 Dangerous Facts Electricians Keep To Themselves")
+  end           
 
 end  
