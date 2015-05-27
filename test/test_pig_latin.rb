@@ -15,6 +15,11 @@ class Test_Pig_Latin < MiniTest::Test
   def test_03_occupying
     expected = "occupyingyay"
     assert_equal expected, PigLatin.translate("occupying")
-  end    
+  end
+  
+  def test_04_combat_complains
+    expected = "ombatcay omplainscay"
+    assert_equal expected, PigLatin.translate("combat complains")
+  end      
 
 end  
